@@ -3,7 +3,6 @@
     <style name="MyTheme" parent="@style/Theme.AppCompat.Light">
         <item name="colorPrimary">#FF683B</item>
         <item name="colorPrimaryDark">#FFFFFF</item>
-        <item name="statusBarColor">#C34E2B</item>
         <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
 

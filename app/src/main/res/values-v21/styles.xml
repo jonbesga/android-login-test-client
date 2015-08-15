@@ -2,7 +2,7 @@
 <resources>
     <style name="MyTheme" parent="@android:style/Theme.Material">
         <item name="android:colorPrimary">#FF683B</item>
-        <item name="android:colorPrimaryDark">#FFFFFF</item>
+        <item name="android:colorPrimaryDark">#f9fff3</item>
         <item name="android:statusBarColor">#C34E2B</item>
     </style>
 
