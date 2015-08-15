@@ -19,7 +19,7 @@ public class NetworkTask extends AsyncTask<Void, Void, Void> {
     @Override
     protected Void doInBackground(Void... params) {
         try {
-            sendPost();
+            //sendPost();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -60,9 +60,9 @@ public class NetworkTask extends AsyncTask<Void, Void, Void> {
     }
 
     // HTTP POST request
-    private void sendPost() throws Exception {
+    private void sendPost(String url, String data) throws Exception {
 
-        String url = "https://android-login-django-jabesga.c9.io/api/v1/login/";
+        url = "https://android-login-django-jabesga.c9.io" + url;
         URL obj = new URL(url);
         HttpsURLConnection con = (HttpsURLConnection) obj.openConnection();
 
@@ -71,7 +71,7 @@ public class NetworkTask extends AsyncTask<Void, Void, Void> {
         //con.setRequestProperty("User-Agent", USER_AGENT);
         //con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 
-        String urlParameters = "username=admin&password=admin";
+        String urlParameters = data;
 
         // Send post request
         con.setDoOutput(true);
